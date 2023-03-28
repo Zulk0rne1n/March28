@@ -6,7 +6,7 @@ export default class Car extends Component {
       <div>
         <h2>{this.props.color}</h2>
         <p>{this.props.type}</p>
-        <p>{this.props.registration}</p>
+        <p>{this.props.registration.toString()}</p>
         <p>{this.props.capacity}</p>
       </div>
     )

@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom'
 import { HelloWorld } from "./HelloWorld";
-import { App } from './App'
+import App  from './App'
 
 
 
