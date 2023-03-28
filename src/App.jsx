@@ -17,17 +17,30 @@ let cars = [
 
 
 export default class App extends Component {
+  state = {
+    count: 0
+  }
+
   render() {
+   
     return (
       <div>
         {
-        cars &&
-        cars.map((car) => {
-            return (
-                <Car color={car.color} type={car.type} registration={car.registration} capacity={car.capacity} />
-            );
-        })
+        // cars &&
+        // cars.map((car) => {
+        //     return (
+        //         <Car color={car.color} type={car.type} registration={car.registration} capacity={car.capacity} />
+        //     );
+        // })
+        
       }
+
+      <div>{this.state.count}</div>
+      <button onClick={()=>{
+        this.setState(()=> ({count: this.state.count+1})
+        );
+        // this.state.count += 1;
+      }}>Click</button>
       </div>
     )
   }
